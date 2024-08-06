@@ -6,16 +6,6 @@
     <title>Dojô Caminho Suave</title>
     <link rel="stylesheet" href="_css/estilo.css">
     <link rel="stylesheet" href="_css/photos.css">
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            var menuToggle = document.querySelector("#menu::before");
-            var menu = document.querySelector("#menu ul");
-
-            menuToggle.addEventListener("click", function() {
-                menu.classList.toggle("show");
-            });
-        });
-    </script>
 </head>
 <body>
     <div id="interface">
@@ -25,6 +15,7 @@
             </hgroup>
         </header>
         <nav id="menu">
+            <div id="menuToggle">☰</div>
             <ul>
                 <li><a href="index.html">HOME</a></li>
                 <li><a href="sobre.html">SOBRE NÓS</a></li>
@@ -46,5 +37,15 @@
             <p>Siga nosso Instagram para acompanhar as últimas novidades e ver mais fotos: <a href="https://www.instagram.com/judopalhoca?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw%3D%3D" target="_blank">@judopalhoca</a>.</p>
         </section>
     </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var menuToggle = document.getElementById("menuToggle");
+            var menu = document.querySelector("#menu ul");
+
+            menuToggle.addEventListener("click", function() {
+                menu.classList.toggle("show");
+            });
+        });
+    </script>
 </body>
 </html>

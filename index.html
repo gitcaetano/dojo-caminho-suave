@@ -5,16 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dojô Caminho Suave</title>
     <link rel="stylesheet" href="_css/estilo.css">
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            var menuToggle = document.querySelector("#menu::before");
-            var menu = document.querySelector("#menu ul");
-
-            menuToggle.addEventListener("click", function() {
-                menu.classList.toggle("show");
-            });
-        });
-    </script>
 </head>
 <body>
     <div id="interface">
@@ -24,6 +14,7 @@
             </hgroup>
         </header>
         <nav id="menu">
+            <div id="menuToggle">☰</div>
             <ul>
                 <li><a href="index.html">HOME</a></li>
                 <li><a href="sobre.html">SOBRE NÓS</a></li>
@@ -43,5 +34,15 @@
             <p>Nesse sentido, o judô é uma luta que relaciona os movimentos do corpo com a energia da mente e espiritual. A superação dos próprios limites é outro fator importante presente na modalidade.</p>
         </section>
     </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var menuToggle = document.getElementById("menuToggle");
+            var menu = document.querySelector("#menu ul");
+
+            menuToggle.addEventListener("click", function() {
+                menu.classList.toggle("show");
+            });
+        });
+    </script>
 </body>
 </html>

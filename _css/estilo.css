@@ -108,6 +108,7 @@ body {
 @media (max-width: 768px) {
     #menu {
         text-align: left;
+        position: relative;
     }
 
     #menu::before {

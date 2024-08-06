@@ -5,16 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dojô Caminho Suave</title>
     <link rel="stylesheet" href="_css/estilo.css">
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            var menuToggle = document.querySelector("#menu::before");
-            var menu = document.querySelector("#menu ul");
-
-            menuToggle.addEventListener("click", function() {
-                menu.classList.toggle("show");
-            });
-        });
-    </script>
 </head>
 <body>
     <div id="interface">
@@ -24,6 +14,7 @@
             </hgroup>
         </header>
         <nav id="menu">
+            <div id="menuToggle">☰</div>
             <ul>
                 <li><a href="index.html">HOME</a></li>
                 <li><a href="sobre.html">SOBRE NÓS</a></li>
@@ -42,5 +33,15 @@
             <p>Desde o início, temos trabalhado incansavelmente para criar um espaço onde as crianças possam crescer, aprender e se divertir. Nossa equipe está sempre pronta para apoiar e orientar cada aluno, garantindo que todos se sintam parte da nossa família do judô.</p>
         </section>
     </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var menuToggle = document.getElementById("menuToggle");
+            var menu = document.querySelector("#menu ul");
+
+            menuToggle.addEventListener("click", function() {
+                menu.classList.toggle("show");
+            });
+        });
+    </script>
 </body>
 </html>

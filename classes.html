@@ -6,16 +6,6 @@
     <title>Dojô Caminho Suave</title>
     <link rel="stylesheet" href="_css/estilo.css">
     <link rel="stylesheet" href="_css/class.css">
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            var menuToggle = document.querySelector("#menu::before");
-            var menu = document.querySelector("#menu ul");
-
-            menuToggle.addEventListener("click", function() {
-                menu.classList.toggle("show");
-            });
-        });
-    </script>
 </head>
 <body>
     <div id="interface">
@@ -25,6 +15,7 @@
             </hgroup>
         </header>
         <nav id="menu">
+            <div id="menuToggle">☰</div>
             <ul>
                 <li><a href="index.html">HOME</a></li>
                 <li><a href="sobre.html">SOBRE NÓS</a></li>
@@ -49,5 +40,15 @@
             <p>Esses horários foram estabelecidos para garantir que cada grupo etário receba a atenção e o treinamento adequados às suas necessidades específicas.</p>
         </section>
     </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var menuToggle = document.getElementById("menuToggle");
+            var menu = document.querySelector("#menu ul");
+
+            menuToggle.addEventListener("click", function() {
+                menu.classList.toggle("show");
+            });
+        });
+    </script>
 </body>
 </html>
