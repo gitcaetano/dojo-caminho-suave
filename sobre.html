@@ -5,6 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dojô Caminho Suave</title>
     <link rel="stylesheet" href="_css/estilo.css">
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var menuToggle = document.querySelector("#menu::before");
+            var menu = document.querySelector("#menu ul");
+
+            menuToggle.addEventListener("click", function() {
+                menu.classList.toggle("show");
+            });
+        });
+    </script>
 </head>
 <body>
     <div id="interface">
