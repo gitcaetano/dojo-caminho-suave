@@ -18,6 +18,16 @@
             e.preventDefault();
         });
     });
+
+    document.querySelectorAll("video").forEach(function(currentVideo) {
+        currentVideo.addEventListener("play", function() {
+            document.querySelectorAll("video").forEach(function(otherVideo) {
+                if (otherVideo !== currentVideo) {
+                    otherVideo.pause();
+                }
+            });
+        });
+    });
 </script>
 
 <body>
