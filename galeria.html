@@ -7,6 +7,19 @@
     <link rel="stylesheet" href="_css/estilo.css">
     <link rel="stylesheet" href="_css/photos.css">
 </head>
+<script>
+    document.addEventListener("contextmenu", function (e) {
+        e.preventDefault();
+    });
+
+    document.querySelectorAll("img, video").forEach(function (el) {
+        el.setAttribute("draggable", "false");
+        el.addEventListener("dragstart", function (e) {
+            e.preventDefault();
+        });
+    });
+</script>
+
 <body>
     <div id="interface">
         <header id="cabecalho">
@@ -31,11 +44,19 @@
                 <h3>GALERIA</h3>
             </div>
             <h4>ÚLTIMAS POSTAGENS</h4>
-            <img src="_galeria/ftAtual01.jpg"/>
-            <img src="_galeria/ftAtual02.jpg"/>
-            <img src="_galeria/ftAtual03.jpg"/>
-            <p>Siga nosso Instagram para acompanhar as últimas novidades e ver mais fotos: <a href="https://www.instagram.com/judopalhoca?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw%3D%3D" target="_blank">@judopalhoca</a>.</p>
+
+            <video src="_galeria/ftAtual01.mp4" controls></video>
+            <img src="_galeria/ftAtual02.jpg" alt="Foto recente de treino"/>
+            <video src="_galeria/ftAtual03.mp4" controls></video>
+
+            <p>Siga nosso Instagram para acompanhar as últimas novidades e ver mais fotos:
+                <a href="https://www.instagram.com/judopalhoca?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw%3D%3D" target="_blank">@judopalhoca</a>.
+            </p>
         </section>
+        <footer id="rodape">
+            <p>&copy; 2015 - 2025 Dojô Caminho Suave • Palhoça - SC<br>
+            Desenvolvido com dedicação para os nossos alunos.</p>
+        </footer>        
     </div>
     <script>
         document.addEventListener("DOMContentLoaded", function() {
