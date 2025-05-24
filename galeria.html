@@ -12,14 +12,12 @@
     document.addEventListener("contextmenu", function (e) {
         e.preventDefault();
     });
-
     document.querySelectorAll("img, video").forEach(function (el) {
         el.setAttribute("draggable", "false");
         el.addEventListener("dragstart", function (e) {
             e.preventDefault();
         });
     });
-
     document.querySelectorAll("video").forEach(function(currentVideo) {
         currentVideo.addEventListener("play", function() {
             document.querySelectorAll("video").forEach(function(otherVideo) {
@@ -30,7 +28,6 @@
         });
     });
 </script>
-
 <body>
     <div id="interface">
         <header id="cabecalho">
@@ -55,11 +52,9 @@
                 <h3>GALERIA</h3>
             </div>
             <h4>ÚLTIMAS POSTAGENS</h4>
-
             <video src="_galeria/ftAtual01.mp4" controls></video>
-            <img src="_galeria/ftAtual02.jpg" alt="Foto recente de treino"/>
+            <video src="_galeria/ftAtual02.mp4" controls></video>
             <video src="_galeria/ftAtual03.mp4" controls></video>
-
             <p>Siga nosso Instagram para acompanhar as últimas novidades e ver mais fotos:
                 <a href="https://www.instagram.com/judopalhoca?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw%3D%3D" target="_blank">@judopalhoca</a>.
             </p>
