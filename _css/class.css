@@ -1,40 +1,59 @@
-@import url('https://fonts.googleapis.com/css2?family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&display=swap');
-
-#horario {
-    font-family: "Bona Nova SC", serif;
-    border: 1px solid #606060;
-    margin-left: auto;
-    margin-right: auto;
+.table-container {
+  margin-top: 20px;
+  overflow-x: auto;
 }
 
-#horario td {
-    border: 1px solid #606060;
-    padding: 10px;
-    text-align: center;
-    vertical-align: middle;
+#horarios {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+  font-family: "Bona Nova SC", serif;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  min-width: 100%;
 }
 
-table#horario td.ce {
-    color: #ffffff;
-    background-color: #606060;
-    vertical-align: top;
-    font-weight: bold;
+#horarios caption {
+  font-weight: bold;
+  padding: 10px;
+  background-color: #606060;
+  color: #fff;
+  font-size: 1.1em;
+  letter-spacing: 1px;
 }
 
-table#horario td.cd {
-    background-color: #cecece;
+#horarios caption span {
+  font-weight: normal;
+  margin-left: 10px;
+  font-size: 0.9em;
 }
 
-table#horario caption {
-    color: #888888;
-    font-size: 13pt;
-    font-weight: bolder;
+#horarios th {
+  background-color: #f2f2f2;
+  text-align: center;
+  padding: 12px;
+  font-size: 1em;
 }
 
-table#horario caption span {
-    display: block;
-    float: right;
-    color: #000000;
-    font-size: 8pt;
-    margin-top: 10px;
+#horarios td {
+  padding: 10px 15px;
+  border-bottom: 1px solid #ddd;
+}
+
+#horarios .ce {
+  font-weight: bold;
+  width: 40%;
+  background-color: #f9f9f9;
+}
+
+#horarios .cd {
+  width: 60%;
+}
+
+#horarios tr:nth-child(even) {
+  background-color: #fcfcfc;
+}
+
+#horarios tr:hover td {
+  background-color: #ffe5e5;
+  transition: background-color 0.2s ease;
 }

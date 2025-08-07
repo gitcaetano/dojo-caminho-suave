@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dojô Caminho Suave</title>
+  <link rel="stylesheet" href="_css/estilo.css" />
+  <link rel="stylesheet" href="_css/card.css" />
+  <link rel="icon" type="image/png" href="_imagens/favicon.png" />
+</head>
+<body>
+  <div id="interface">
+    <header id="cabecalho">
+      <hgroup>
+        <h1>DOJÔ CAMINHO SUAVE</h1>
+      </hgroup>
+    </header>
+    <nav id="menu">
+      <div id="menuToggle">☰</div>
+      <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="sobre.html">SOBRE NÓS</a></li>
+        <li><a href="classes.html">CLASSES</a></li>
+        <li><a href="campeonatos.html">CAMPEONATOS</a></li>
+      </ul>
+    </nav>
+    <figcaption id="fotoPrincipal">
+      <img src="_imagens/imgCampeonatos.png" alt="Campeonatos de Judô" />
+    </figcaption>
+    <section id="conteudo">
+      <div id="titulo-judo">
+        <h3>PRÓXIMOS CAMPEONATOS</h3>
+      </div>
+      <div class="table-container">
+        <table class="campeonatos-table">
+          <thead>
+            <tr>
+              <th>Evento</th>
+              <th>Data</th>
+              <th>Local</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>JEP</td>
+              <td>09/08/2025</td>
+              <td>Caranguejão</td>
+            </tr>
+            <tr>
+              <td>Instituto</td>
+              <td>09/09/2025</td>
+              <td>Florianópolis - SC</td>
+            </tr>
+            <tr>
+              <td>Estadual (Sub-11 e Sênior) - Classif. para o Meeting</td>
+              <td>23/08/2025</td>
+              <td>São José - SC</td>
+            </tr>
+            <tr>
+              <td>Litoral</td>
+              <td>13/09/2025</td>
+              <td>Florianópolis - SC (Instituto)</td>
+            </tr>
+            <tr>
+              <td>Brasileiro Sub-13 (Apenas para o Vitinho e Luiz)</td>
+              <td>02 e 03/10/2025</td>
+              <td>João Pessoa - PB</td>
+            </tr>
+            <tr>
+              <td>Meeting (Sub-11 e Sub-13)</td>
+              <td>14 a 16/11/2025</td>
+              <td>Blumenau - SC</td>
+            </tr>
+            <tr>
+              <td>Jasc (Sub-18)</td>
+              <td>20 a 23/11/2025</td>
+              <td>Chapecó - SC</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+    <footer id="rodape">
+      <p>&copy; 2015 - 2025 Dojô Caminho Suave</p>
+    </footer>
+  </div>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      var menuToggle = document.getElementById("menuToggle");
+      var menu = document.querySelector("#menu ul");
+      menuToggle.addEventListener("click", function() {
+        menu.classList.toggle("show");
+      });
+    });
+  </script>
+</body>
+</html>

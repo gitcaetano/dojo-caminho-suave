@@ -1,0 +1,34 @@
+.table-container {
+  margin-top: 20px;
+  overflow-x: auto;
+}
+
+.campeonatos-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+  font-family: "Bona Nova SC", serif;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  min-width: 100%;
+}
+
+.campeonatos-table thead tr {
+  background-color: #606060;
+  color: #fff;
+  text-align: left;
+}
+
+.campeonatos-table th,
+.campeonatos-table td {
+  padding: 12px 15px;
+  border-bottom: 1px solid #ddd;
+}
+
+.campeonatos-table tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+
+.campeonatos-table tbody tr:hover {
+  background-color: #ffe5e5;
+  transition: background-color 0.2s ease;
+}

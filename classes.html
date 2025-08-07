@@ -1,68 +1,68 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dojô Caminho Suave</title>
-    <link rel="stylesheet" href="_css/estilo.css">
-    <link rel="stylesheet" href="_css/class.css">
-    <link rel="icon" type="image/png" href="_imagens/favicon.png">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dojô Caminho Suave</title>
+  <link rel="stylesheet" href="_css/estilo.css" />
+  <link rel="stylesheet" href="_css/class.css" />
+  <link rel="icon" type="image/png" href="_imagens/favicon.png" />
 </head>
 <body>
-    <div id="interface">
-        <header id="cabecalho">
-            <hgroup>
-                <h1>DOJÔ CAMINHO SUAVE</h1>
-            </hgroup>
-        </header>
-        <nav id="menu">
-            <div id="menuToggle">☰</div>
-            <ul>
-                <li><a href="index.html">HOME</a></li>
-                <li><a href="sobre.html">SOBRE NÓS</a></li>
-                <li><a href="classes.html">CLASSES</a></li>
-                <li><a href="galeria.html">GALERIA</a></li>
-            </ul>
-        </nav>
-        <figcaption id="fotoPrincipal">
-            <img src="_imagens/imgClasses.png"/>
-        </figcaption>
-        <section id="conteudo">
-            <div id="titulo-judo">
-                <h3>HORÁRIOS</h3>
-            </div>
-            <p>No Dojô Caminho Suave, oferecemos horários de aulas que se adequam às rotinas dos nossos alunos, com treinos em diferentes bairros de Palhoça. Confira os dias, horários e locais abaixo:</p>
-            <table id="horario">
-                <caption>TABELA DE HORÁRIOS<span>JUL/2025</span></caption>
-                    <tr><th colspan="2">Segunda e Quarta</th></tr>
-                    <tr><td class="ce">Local:</td> <td class="cd">R. Neri dos Santos, 148 - Jardim Eldorado</td></tr>
-                    <tr><td class="ce">Menos graduados:</td> <td class="cd">das 19:00 às 20:00</td></tr>
-                    <tr><td class="ce">Sub-11, Sub-13, Sub-15 e maiores:</td> <td class="cd">das 20:00 às 21:30</td></tr>
-
-                    <tr><th colspan="2">Terça e Quinta</th></tr>
-                    <tr><td class="ce">Local 1:</td> <td class="cd">Ginásio Caminho Novo - Caminho Novo</td></tr>
-                    <tr><td class="ce">Menos graduados:</td> <td class="cd">das 19:00 às 20:00</td></tr>
-                    <tr><td class="ce">Local 2:</td> <td class="cd">R. Armando Siegel, 41 - Pte. do Imaruim</td></tr>
-                    <tr><td class="ce">Sub-11, Sub-13, Sub-15 e maiores:</td> <td class="cd">das 18:15 às 19:30</td></tr>
-
-                    <tr><th colspan="2">Sexta-feira</th></tr>
-                    <tr><td class="ce">Local:</td> <td class="cd">R. Armando Siegel, 41 - Pte. do Imaruim</td></tr>
-                    <tr><td class="ce">Sub-11, Sub-13, Sub-15 e maiores:</td> <td class="cd">das 20:30 às 21:30</td></tr>
-            </table>
-            <p>Esses horários foram estabelecidos para garantir que cada grupo etário receba a atenção e o treinamento adequados às suas necessidades específicas.</p>
-        </section>
-        <footer id="rodape">
-            <p>&copy; 2015 - 2025 Dojô Caminho Suave</p>
-        </footer>    
-    </div>
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            var menuToggle = document.getElementById("menuToggle");
-            var menu = document.querySelector("#menu ul");
-            menuToggle.addEventListener("click", function() {
-                menu.classList.toggle("show");
-            });
-        });
-    </script>
+  <div id="interface">
+    <header id="cabecalho">
+      <hgroup>
+        <h1>DOJÔ CAMINHO SUAVE</h1>
+      </hgroup>
+    </header>
+    <nav id="menu">
+      <div id="menuToggle">☰</div>
+      <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="sobre.html">SOBRE NÓS</a></li>
+        <li><a href="classes.html">CLASSES</a></li>
+        <li><a href="campeonatos.html">CAMPEONATOS</a></li>
+      </ul>
+    </nav>
+    <figcaption id="fotoPrincipal">
+      <img src="_imagens/imgClasses.png" alt="Horários de Aula de Judô" />
+    </figcaption>
+    <section id="conteudo">
+      <div id="titulo-judo">
+        <h3>HORÁRIOS</h3>
+      </div>
+      <p>No Dojô Caminho Suave, oferecemos horários de aulas que se adequam às rotinas dos nossos alunos, com treinos em diferentes bairros de Palhoça. Confira os dias, horários e locais abaixo:</p>
+      <div class="table-container">
+        <table id="horarios">
+          <caption>TABELA DE HORÁRIOS <span>AGO/2025</span></caption>
+          <tr><th colspan="2">Segunda e Quarta</th></tr>
+          <tr><td class="ce">Local:</td><td class="cd">R. Neri dos Santos, 148 - Jardim Eldorado</td></tr>
+          <tr><td class="ce">Menos graduados:</td><td class="cd">das 19:00 às 20:00</td></tr>
+          <tr><td class="ce">Sub-11, Sub-13, Sub-15 e maiores:</td><td class="cd">das 20:00 às 21:30</td></tr>
+          <tr><th colspan="2">Terça e Quinta</th></tr>
+          <tr><td class="ce">Local 1:</td><td class="cd">Ginásio Caminho Novo - Caminho Novo</td></tr>
+          <tr><td class="ce">Menos graduados:</td><td class="cd">das 19:00 às 20:00</td></tr>
+          <tr><td class="ce">Local 2:</td><td class="cd">R. Armando Siegel, 41 - Pte. do Imaruim</td></tr>
+          <tr><td class="ce">Sub-11, Sub-13, Sub-15 e maiores:</td><td class="cd">das 18:15 às 19:30</td></tr>
+          <tr><th colspan="2">Sexta-feira</th></tr>
+          <tr><td class="ce">Local:</td><td class="cd">R. Armando Siegel, 41 - Pte. do Imaruim</td></tr>
+          <tr><td class="ce">Sub-11, Sub-13, Sub-15 e maiores:</td><td class="cd">das 20:30 às 21:30</td></tr>
+        </table>
+      </div>
+      <p>Esses horários foram estabelecidos para garantir que cada grupo etário receba a atenção e o treinamento adequados às suas necessidades específicas.</p>
+    </section>
+    <footer id="rodape">
+      <p>&copy; 2015 - 2025 Dojô Caminho Suave</p>
+    </footer>
+  </div>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      var menuToggle = document.getElementById("menuToggle");
+      var menu = document.querySelector("#menu ul");
+      menuToggle.addEventListener("click", function() {
+        menu.classList.toggle("show");
+      });
+    });
+  </script>
 </body>
 </html>
